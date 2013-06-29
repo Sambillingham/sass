@@ -1,0 +1,14 @@
+/*
+Theme Name: SASS
+Theme URI: http://sambillingham.com/sass
+Author: Sam Billingham
+Author URI: http://sambillingham.com/
+Description: A super simple sass theme for wordpress
+Version: 0.1
+License: GNU General Public License
+
+*/
+body {
+
+	background: red;
+}
