@@ -1,0 +1,82 @@
+/*
+Theme Name: SASS
+Theme URI: http://sambillingham.com/sass
+Author: Sam Billingham
+Author URI: http://sambillingham.com/
+Description: A super simple sass theme for wordpress. No sidebar, no extras, space for great content.
+Version: 0.1
+License: GNU General Public License
+*/
+
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+
+@import "normalize";
+@import "mixins";
+@import "color";
+@import "typography";
+@import "helpers";
+@import "animate";
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+
+    font-size: 62.5%;
+    background: #fff;
+}
+
+body {
+
+    position: relative;
+    margin: 0 auto;
+    @include font-size($font-size);
+}
+
+%container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include breakpoint(small) {
+
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    @include breakpoint(medium) {
+
+        margin: 0 auto;
+        width: 550px;
+
+    }
+
+    @include breakpoint(large) {
+
+        margin: 0 auto;
+        width: 730px;
+    }
+}
+
+/* Header
+================================================== */
+
+@import "includes/header";
+
+/* Main Content
+================================================== */
+
+@import "includes/main-content";
+
+/* Comments Section
+================================================== */
+
+@import "includes/comments";
+
+/*Footer
+================================================== */
+
+@import "includes/footer";
+

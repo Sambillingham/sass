@@ -1,0 +1,69 @@
+$off-white: #f4f4f4;
+$text-black: #444;
+$light-grey: #ccc;
+$super-light-grey: #ebebeb;
+
+/**
+*
+* Easily change the theme colours using these varibles
+*
+**/
+
+//SIte headin color
+$site-heading-color: #34495e;
+//Block quote border colour
+$block-quote-color: $light-grey;
+
+//Main text colour
+$copy-color: $text-black;
+
+//link hover colour: 
+$link-hover: #ec4643; //redish-orange
+
+//link hover underline colour
+$link-hover-underline: $text-black;
+
+//continue reading colour
+$text-highlight-color: #b3d4fc; //blueish
+
+//Horizontal rule colour
+$rule-color: $light-grey;
+
+//table border colour
+$table-border: $light-grey;
+
+//Navigation links main colour
+$nav-link-color: $light-grey;
+
+//navigation link hover colour
+$nav-link-hover: $text-black;
+
+//navigation link underline
+$nav-link-border: transparent;
+
+//Post border bottom: 
+$post-border-bottom: $super-light-grey;
+
+//category link hover colour
+$cat-link-hover: $link-hover;
+
+//category link underline colour
+$cat-link-underline: $text-black;
+
+//Border on self side of tags
+$tags-border: $light-grey;
+
+//Hover colour of tags
+$tags-hover: $link-hover;
+
+//Underline colour of tags on hover
+$tags-underline: $text-black;
+
+//Continue Reading Hover Colour
+$continue-hover: $light-grey;
+
+//Comment background color: 
+$comment-background: #F0EDED;
+
+//Border for published credits on single post page
+$author-border: #ccc;

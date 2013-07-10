@@ -1,0 +1,150 @@
+/*==========  Comment list  ==========*/
+
+.comments-block {
+	height: auto;
+
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.awaiting-aproval{
+		padding: 5px;
+		margin-bottom: 10px;
+		background: #FFF2AB;
+		@include border-radius(5px);
+
+		p {
+			margin: 0;
+			text-align: center;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			@include font-size(12);
+		}
+	}
+	.comment-gravatar {
+		float: left;
+		width: 75px;
+		height: 75px;
+		margin: 12.5px;
+
+		img {
+			width: 75px;
+			height: 75px;
+			@include border-radius(100%);
+		}
+		@include breakpoint(small) {
+			float: none;
+			margin: 12.5px auto;
+		}
+		@include breakpoint(medium) {
+			float: none;
+			margin: 12.5px auto;
+		}
+	}
+
+	.comment-content{
+		padding: 0 30px;
+		float: left;
+		width: 570px;
+
+		@include breakpoint(small){
+			width: 230px;
+			padding: 5px;
+		}
+		@include breakpoint(medium){
+			width: 510px;
+		}
+	}
+
+	.post-comment {
+		padding: 15px;
+		margin: 15px 0;
+		background: $comment-background;
+
+		.comment-meta {
+			margin-top: 12.5px;
+			padding-bottom: 5px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			@include font-size(14);
+			border-bottom: solid #ccc 1px;
+
+			@include breakpoint(small){
+				text-align: center;
+			}
+			@include breakpoint(medium){
+				text-align: center;
+			}
+		}
+	}
+}
+/*==========  New Comment Form  ==========*/
+
+
+.new-comment-block {
+	margin: 70px 0;
+
+	.sass-comment-label {
+		margin-left: 20px;
+		padding-bottom: 3px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include font-size(12);
+
+		@include breakpoint(small) {
+			margin: 5px auto;
+		}
+	}
+	input:not([type=submit]):not([type=file]) {
+		width: 250px;
+  		padding: 10px;
+  		border: none;
+  		background: #ccc;
+  		@include border-radius(3px);
+
+  		@include breakpoint(small) {
+  			width: 290px;
+  		}
+
+
+	}
+	input[type=submit]{
+		padding: 20px 30px;
+		border: none;
+		background: $super-light-grey;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include font-size(12);
+
+  		@include border-radius(8px);
+
+  		@include transition-property(background);
+   		@include transition-duration(300ms);
+
+	   	&:hover{
+	  			background: #D3F5D9;
+	  		}
+	  	&:active{
+	  		background: #93ab97;
+	  	}
+	}
+	
+  	
+	textarea{
+		width: 510px;
+		resize: none;
+		overflow: auto;
+		border: solid #ccc 2px;
+		@include border-radius(5px);
+		@include breakpoint(small) {
+			width: 290px;
+		}
+	}
+}
+
+
