@@ -163,9 +163,6 @@ a {
     text-decoration: none;
     border-bottom: transparent 1px solid;
     color: $text-black;
-
-    @include transition-property(color,border);
-    @include transition-duration(400ms);
     
 }
 

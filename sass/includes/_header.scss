@@ -49,7 +49,6 @@ header {
 		.avatar {
 		height: 100px;
 		width: 100px;
-		@include border-radius(50px);
 
 			@include breakpoint(small) {
 				float: none;

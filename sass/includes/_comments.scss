@@ -12,8 +12,6 @@
 		padding: 5px;
 		margin-bottom: 10px;
 		background: #FFF2AB;
-		@include border-radius(5px);
-
 		p {
 			margin: 0;
 			text-align: center;
@@ -32,7 +30,6 @@
 		img {
 			width: 75px;
 			height: 75px;
-			@include border-radius(100%);
 		}
 		@include breakpoint(small) {
 			float: none;
@@ -104,7 +101,6 @@
   		padding: 10px;
   		border: none;
   		background: #ccc;
-  		@include border-radius(3px);
 
   		@include breakpoint(small) {
   			width: 290px;
@@ -121,10 +117,6 @@
 		letter-spacing: 1px;
 		@include font-size(12);
 
-  		@include border-radius(8px);
-
-  		@include transition-property(background);
-   		@include transition-duration(300ms);
 
 	   	&:hover{
 	  			background: #D3F5D9;
@@ -140,7 +132,6 @@
 		resize: none;
 		overflow: auto;
 		border: solid #ccc 2px;
-		@include border-radius(5px);
 		@include breakpoint(small) {
 			width: 290px;
 		}

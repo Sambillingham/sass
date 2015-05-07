@@ -8,10 +8,6 @@ Version: 0.1
 License: GNU General Public License
 */
 
-@import "compass/css3/transition";
-@import "compass/css3/border-radius";
-@import "compass/css3/box-sizing";
-
 @import "normalize";
 @import "mixins";
 @import "color";
@@ -20,7 +16,9 @@ License: GNU General Public License
 @import "animate";
 
 * {
-	@include box-sizing(border-box);
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {

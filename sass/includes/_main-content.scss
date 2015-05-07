@@ -120,7 +120,6 @@
     	float: right;
         height: 100px;
         width: 100px;
-        @include border-radius(100px, 100px);
 
         @include breakpoint(small) {
         	float: left;
